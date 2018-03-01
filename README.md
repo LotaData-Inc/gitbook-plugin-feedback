@@ -1,9 +1,9 @@
 # gitbook-plugin-page-feedback
 Plugin for gitbook to add feedback to all your pages. Feedback clicks get routed to Slack.
 
-[![npm version](https://badge.fury.io/js/gitbook-plugin-page-feedback.svg)](https://badge.fury.io/js/gitbook-plugin-page-feedback)
+[![npm version](https://badge.fury.io/js/gitbook-plugin-lotadata-feedback.svg)](https://badge.fury.io/js/gitbook-plugin-lotadata-feedback)
 
-![Screenshot](page-feedback-screenshot.png)
+![Screenshot](lotadata-feedback.png)
 
 ## Configuration
 Set your Slack channel and incoming webhook url.
