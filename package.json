@@ -6,7 +6,9 @@
     "engines": {
         "gitbook": ">=2.5.1"
     },
-    "devDependencies": {"lodash": "^4.17.3"},
+    "dependencies": {
+    "lodash"          : "~4.17.3"
+    },
     "homepage": "https://github.com/LotaData-Inc/gitbook-plugin-lotadata-feedback",
     "repository": {
         "type": "git",
