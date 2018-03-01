@@ -1,35 +1,35 @@
 {
-    "name": "gitbook-plugin-lotadata-feedback   ",
-    "description": "LotaData feedback for gitbook",
-    "main": "index.js",
-    "version": "0.0.2",
-    "engines": {
-        "gitbook": ">=2.5.1"
-    },
-    "dependencies": {
-    "lodash"          : "~4.17.3"
-    },
-    "homepage": "https://github.com/LotaData-Inc/gitbook-plugin-lotadata-feedback",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/LotaData-Inc/gitbook-plugin-lotadata-feedback"
-    },
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/LotaData-Inc/gitbook-plugin-lotadata-feedback/issues"
-    },
-    "gitbook": {
-        "properties": {
-            "slack-channel": {
-                "type": "string",
-                "title": "Channel name for Slack",
-                "required": true
-            },
-            "slack-webhook": {
-                "type": "string",
-                "title": "Webhook url for Slack",
-                "required": true
-            }
-        }
+  "name": "gitbook-plugin-lotadata-feedback   ",
+  "description": "LotaData feedback for gitbook",
+  "main": "index.js",
+  "version": "0.1.0",
+  "engines": {
+    "gitbook": ">=2.5.1"
+  },
+  "dependencies": {
+    "lodash": "~4.17.3"
+  },
+  "homepage": "https://github.com/LotaData-Inc/gitbook-plugin-lotadata-feedback",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LotaData-Inc/gitbook-plugin-lotadata-feedback"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LotaData-Inc/gitbook-plugin-lotadata-feedback/issues"
+  },
+  "gitbook": {
+    "properties": {
+      "slack-channel": {
+        "type": "string",
+        "title": "Channel name for Slack",
+        "required": true
+      },
+      "slack-webhook": {
+        "type": "string",
+        "title": "Webhook url for Slack",
+        "required": true
+      }
     }
+  }
 }
