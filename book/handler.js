@@ -13,8 +13,8 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
             request_data = {
                 "channel": cfg['slack-channel'],
                 "text": text,
-                "username": "Obi-Wan",
-                "icon_emoji": " :scales:"
+                "username": "webhookbot",
+                "icon_emoji": " :ghost:"
             }
 
             $.post(cfg['slack-webhook'], JSON.stringify(request_data), function(data) {
