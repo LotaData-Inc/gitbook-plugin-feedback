@@ -3,7 +3,7 @@ var cfg;
 require(["gitbook", "jQuery"], function(gitbook, $) {
 
     gitbook.events.bind("start", function(e, config) {
-        cfg = config['page-feedback'];
+        cfg = config['lotadata-feedback'];
     });
 
     gitbook.events.bind("page.change", function(e) {
@@ -14,7 +14,7 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
                 "channel": cfg['slack-channel'],
                 "text": text,
                 "username": "Obi-Wan",
-                "icon_emoji": ":scales:"
+                "icon_emoji": " :scales:"
             }
 
             $.post(cfg['slack-webhook'], JSON.stringify(request_data), function(data) {
