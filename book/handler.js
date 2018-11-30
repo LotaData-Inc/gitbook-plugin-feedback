@@ -34,15 +34,18 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
 
         $(function() {
             $("#page-feedback-yes").on("click", function(e) {
-                sendToSlack("<" + window.location.href + "|" + document.title + "> is helpful! :bowtie: :balloon:");
+                $.getJSON ('http://www.geoplugin.net/json.gp?jsoncallback=?', function (data) {
+                    sendToSlack("<" + window.location.href + "|" + document.title + "> is helpful! :bowtie: :balloon:" + "|" + JSON.stringify (data, null, 2));
+                });                
             });
         });
 
 
         $(function() {
             $("#page-feedback-no").on("click", function(e) {
-                console.log('page feedback no!');
-                sendToSlack("<" + window.location.href + "|" + document.title + "> is *not* helpful! :dizzy_face: :poop:");
+                $.getJSON ('http://www.geoplugin.net/json.gp?jsoncallback=?', function (data) {
+                    sendToSlack("<" + window.location.href + "|" + document.title + "> is *not* helpful! :dizzy_face: :poop:" + "|" + JSON.stringify (data, null, 2));
+                });
             });
         });
 
