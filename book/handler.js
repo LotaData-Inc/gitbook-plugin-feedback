@@ -34,18 +34,18 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
 
         $(function() {
             $("#page-feedback-yes").on("click", function(e) {
-                $.getJSON ('http://www.geoplugin.net/json.gp?jsoncallback=?', function (data) {
-                    sendToSlack("<" + window.location.href + "|" + document.title + "> is helpful! :bowtie: :balloon:" + "|" + JSON.stringify (data, null, 2));
-                });                
+                $.get("https://ipinfo.io", function(response) {
+                    sendToSlack("<" + window.location.href + "|" + document.title + "> is helpful! :bowtie: :balloon:" + "|" + JSON.stringify (response, null, 2));
+                }, "jsonp")
             });
         });
 
 
         $(function() {
             $("#page-feedback-no").on("click", function(e) {
-                $.getJSON ('http://www.geoplugin.net/json.gp?jsoncallback=?', function (data) {
-                    sendToSlack("<" + window.location.href + "|" + document.title + "> is *not* helpful! :dizzy_face: :poop:" + "|" + JSON.stringify (data, null, 2));
-                });
+                $.get("https://ipinfo.io", function(response) {
+                    sendToSlack("<" + window.location.href + "|" + document.title + "> is *not* helpful! :dizzy_face: :poop:" + "|" + JSON.stringify (response, null, 2));
+                }, "jsonp")
             });
         });
 
